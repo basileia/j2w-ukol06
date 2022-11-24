@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 @Entity
 public class Vizitka {
@@ -32,7 +31,6 @@ public class Vizitka {
     @NotBlank
     private String obec;
 
-    @Length(min = 5, max = 5)
     @NotBlank
     private String psc;
 
@@ -40,8 +38,6 @@ public class Vizitka {
     @Email
     private String email;
 
-    @Length(min = 9, max = 20)
-    @Pattern(regexp = "\\+?\\d+")
     private String telefon;
 
     @Length(max = 100)
