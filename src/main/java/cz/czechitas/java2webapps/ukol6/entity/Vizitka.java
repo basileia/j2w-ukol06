@@ -32,12 +32,14 @@ public class Vizitka {
     private String obec;
 
     @NotBlank
+    @Length(min = 5, max = 5)
     private String psc;
 
     @Length(max = 100)
     @Email
     private String email;
 
+    @Length(max = 20)
     private String telefon;
 
     @Length(max = 100)
